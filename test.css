@@ -1,6 +1,10 @@
-img {width: 100%;}
+/* img {width: 100%;}
 .wrapper {width: 1200px;margin: 0 auto;display: flex;}
 .wrapper div {border: 1px solid #000;width: 50%;}
 .avatar {}
 .dress-wrap {display: flex;flex-wrap: wrap;}
-.dress-wrap .dress-box {width: 50%;box-sizing: border-box;}
+.dress-wrap .dress-box {width: 50%;box-sizing: border-box;} */
+
+
+/* 난독화 : http://cssobfuscator.com/ */
+[class~=wrapper] div{border-left-width:.010416667in;}[class~=wrapper] div{border-bottom-width:.010416667in;}[class~=wrapper]{width:12.5in;}[class~=wrapper] div{border-right-width:.010416667in;}[class~=wrapper] div{border-top-width:.010416667in;}[class~=wrapper] div{border-left-style:solid;}[class~=wrapper]{margin-left:auto;}[class~=wrapper] div{border-bottom-style:solid;}[class~=wrapper] div{border-right-style:solid;}[class~=wrapper]{margin-bottom:0;}[class~=wrapper]{margin-right:auto;}[class~=wrapper] div{border-top-style:solid;}[class~=wrapper] div{border-left-color:#000;}[class~=wrapper] div{border-bottom-color:#000;}[class~=wrapper]{margin-top:0;}img{width:100%;}[class~=wrapper] div{border-right-color:#000;}[class~=wrapper] div,[class~=dress-wrap] [class~=dress-box]{width:50%;}[class~=wrapper] div{border-top-color:#000;}[class~=wrapper] div{border-image:none;}[class~=dress-wrap],[class~=wrapper]{display:flex;}[class~=avatar]{}[class~=dress-wrap]{flex-wrap:wrap;}[class~=dress-wrap] [class~=dress-box]{box-sizing:border-box;}
