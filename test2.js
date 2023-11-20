@@ -1,0 +1,1 @@
+localStorage.setItem("테스트", "잘 들어갔음");
