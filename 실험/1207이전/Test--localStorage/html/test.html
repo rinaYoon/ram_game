@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+<!--
+
+	localStorage(로컬 스토리지)
+	1. 로컬은 안됨, 서버만 됨 => 즉 배포 및 서버에 등록을 해야함. 로컬에서 키면 아예 로컬스토리지가 안만들어짐
+	2. 만약 로컬스토리지를 이용하려면 html에 <script></script>로 등록한 뒤 지워야할듯 (그리고 메모장에 따로 옮겨놓기(기억하기쉽게))
+	3. 단, 문자열만 가능하다(문자형 데이터임, 근데 객체, 배열하는방법 있음)
+
+	4. wix에 저장됨(https://cttdyoonrina.wixsite.com/test--yoon << 확인)
+	4-1. 그래서 html내에 로컬스토리지 전용js를 만들어 연결 후에 끊거나, 또는 html내에 scrict에 써서 업로드, 지워서 업로드 등등 두번 변경 후 업로드 해야할지도.
+	4-3. html에 등록했다가 지웠던 로컬스토리지 "이름"이 test.js에 쓰고 업로드 했더니 윅스에서 반응함. 되긴되나봄
+
+	5. 남에게 공유하지 않는 이상 공유는 가능하다.
+	5-1. 공유하게 되면 남이 마음대로 추가+삭제를 할 수 있기 때문.
+
+	6. 사용못함
+	6-1. 공유가 불가능함.
+	6-2. 말 그대로 '로컬'이기 때문에 내 컴, 내 브라우저만 가능함.
+	6-3. 크롬이 아닌 다른 브라우저에서도 wix 열었을때 로컬스토리지에 값이 없음.
+	6-4. 즉, 나는 옷입히기 할 수 있어도 다른사람들은 못함.
+
+-->
+
+
+	<!-- <script src="../js/test.js"></> -->
+	<script src="../js/test2.js"></script>
+	<script>
+		// window.localStorage.removeItem("이름");
+	</script>
+</body>
+</html>
