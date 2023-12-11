@@ -1,0 +1,11 @@
+<공동파일은 내 깃에 배포>
+- css
+- js
+- 폴더 default 이미지
+
+<유저에게만 올라갈 파일들>
+- html
+- 폴더 images
+- ※현재작업은 내가 먼저 계정 만들기
+https://www.youtube.com/watch?v=X3pjLc7BiwU
+https://www.netlify.com/
