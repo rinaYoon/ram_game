@@ -7,13 +7,13 @@ a {text-decoration: none;}
 div {box-sizing: border-box;}
 /* //reset */
 
-.wrapper.h-teg {max-width: 1920px;min-width: 1000px;line-height: 1;display: flex;justify-content: center;align-items: center;background-color: #222;}
+.wrapper.h-teg {max-width: 1920px;min-width: 1000px;margin: 0 auto;line-height: 1;display: flex;justify-content: center;align-items: center;background-color: #222;}
 .wrapper.h-teg .blind {position: absolute;width: 1px;height: 1px;margin: -1px;padding: 0;border: 0;clip: rect(0 0 0 0);overflow: hidden;text-indent: -5000em;}
-.wrapper.h-teg .wrapper-inner {width: 1765px;position: relative;background-image: url(../default/bg.jpg);background-repeat: no-repeat;background-position: center top;background-size: 100%;}
+.wrapper.h-teg .wrapper-inner {width: 1920px;position: relative;background-image: url(../default/bg.jpg);background-repeat: no-repeat;background-position: center top;background-size: 100%;}
 
 .wrapper.h-teg .name-teg {}
 
-.wrapper.h-teg .area-games {display: flex;justify-content: space-between;padding: 38px 132px 46px 64px;}
+.wrapper.h-teg .area-games {display: flex;justify-content: space-between;padding: 57px 202px 77px 137px;}
 .wrapper.h-teg .area-games [class^="division-"] {width: 748px;}
 .wrapper.h-teg .area-games .division-character{padding-top: 946px;background-image: url(../images/character.png);background-repeat: no-repeat;background-position: center top;background-size: 100%;background-color: rgba(255, 192, 203, 0.589);}
 .wrapper.h-teg .division-tab{padding-top: 946px;background-color: rgba(135, 207, 235, 0.521);}
