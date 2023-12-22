@@ -19,10 +19,10 @@ body {background-color: #222;}
 .wrapper.h-teg .area-games {display: flex;justify-content: space-between;padding: 56px 208px 64px 142px;}
 .wrapper.h-teg .area-games [class^="division-"] {width: 748px;}
 
-.wrapper.h-teg .division-character{padding-top: 946px;background-image: url(../images/character.png);background-color: rgba(255, 192, 203, 0.589);}
+.wrapper.h-teg .division-character{padding-top: 946px;background-image: url(../images/character.png);}
+.wrapper.h-teg .division-tab{position: relative;}
 
-.wrapper.h-teg .division-tab{position: relative;background-color: rgba(135, 207, 235, 0.521);}
-
+/* 탭버튼 */
 .wrapper.h-teg .slot-buttons {position: absolute;top: 67px;right: -159px;}
 .wrapper.h-teg .slot-buttons [class^="button-tab--"] {width: 188px;padding-top: 123px;display: block;clip-path: polygon(20% 0, 100% 0, 100% 100%, 20% 100%);}
 .wrapper.h-teg .slot-buttons [class^="button-tab--"] + [class^="button-tab--"] {margin-top: 30px;}
@@ -30,25 +30,49 @@ body {background-color: #222;}
 .wrapper.h-teg .slot-buttons .button-tab--hat {background-image: url(../default/tag-hat.png);}
 .wrapper.h-teg .slot-buttons .button-tab--clothes {background-image: url(../default/tag-clothes.png);}
 .wrapper.h-teg .slot-buttons .button-tab--shoes {background-image: url(../default/tag-shoes.png);}
+/* //탭버튼 */
 
-.wrapper.h-teg .slot-contents {}
-.wrapper.h-teg .slot-contents [class^="unit-content--"] {}
-
-.wrapper.h-teg [class^="unit-content--"] .item-bundle {}
-.wrapper.h-teg [class^="unit-content--"] .item-bundle--two {position: relative;}
-
-.wrapper.h-teg [class^="unit-content--"] [class*="item-bundle"] .item {width: 100%;display: block;padding-top: 946px;}
-.wrapper.h-teg [class^="unit-content--"] .item-bundle .item {}
-.wrapper.h-teg [class^="unit-content--"] .item-bundle--two .item {}
+/* 슬라이드아이템 */
+.wrapper.h-teg [class^="unit-content--"] {display: none;}
+.wrapper.h-teg [class^="unit-content--"].is-active {display: block;}
+.wrapper.h-teg [class^="unit-content--"] [class*="item-bundle"] [class^="item-"] {width: 100%;display: block;}
+.wrapper.h-teg [class^="unit-content--"] .item-bundle [class^="item-"] {padding-top: 946px;}
+.wrapper.h-teg [class^="unit-content--"] .item-bundle--two [class^="item-"] {padding-top: 473px;}
 
 .wrapper.h-teg .unit-content--hat {}
-.wrapper.h-teg .unit-content--hat .item-bundle .item {}
-.wrapper.h-teg .unit-content--hat .item-bundle--two .item {}
+.wrapper.h-teg .unit-content--hat .item-bundle .item-01 {background-image: url(../images/slide/hat-long-01.png);}
+.wrapper.h-teg .unit-content--hat .item-bundle .item-02 {background-image: url(../images/slide/hat-long-02.png);}
+.wrapper.h-teg .unit-content--hat .item-bundle .item-03 {background-image: url(../images/slide/hat-long-03.png);}
+.wrapper.h-teg .unit-content--hat .item-bundle .item-04 {background-image: url(../images/slide/hat-long-04.png);}
+.wrapper.h-teg .unit-content--hat .item-bundle--two .item-01 {background-image: url(../images/slide/hat-short-01.png);}
+.wrapper.h-teg .unit-content--hat .item-bundle--two .item-02 {background-image: url(../images/slide/hat-short-02.png);}
+.wrapper.h-teg .unit-content--hat .item-bundle--two .item-03 {background-image: url(../images/slide/hat-short-03.png);}
+.wrapper.h-teg .unit-content--hat .item-bundle--two .item-04 {background-image: url(../images/slide/hat-short-04.png);}
 
-.wrapper.h-teg .unit-content--clothes {display: none;}
-.wrapper.h-teg .unit-content--clothes .item-bundle .item {background-image: url(../images/clothes-long-01.png);}
-.wrapper.h-teg .unit-content--clothes .item-bundle--two .item {}
+.wrapper.h-teg .unit-content--clothes {}
+.wrapper.h-teg .unit-content--clothes .item-bundle .item-01 {background-image: url(../images/slide/clothes-long-01.png);}
+.wrapper.h-teg .unit-content--clothes .item-bundle .item-02 {background-image: url(../images/slide/clothes-long-02.png);}
+.wrapper.h-teg .unit-content--clothes .item-bundle .item-03 {background-image: url(../images/slide/clothes-long-03.png);}
+.wrapper.h-teg .unit-content--clothes .item-bundle .item-04 {background-image: url(../images/slide/clothes-long-04.png);}
+.wrapper.h-teg .unit-content--clothes .item-bundle--two .item-01 {background-image: url(../images/slide/clothes-short-01.png);}
+.wrapper.h-teg .unit-content--clothes .item-bundle--two .item-02 {background-image: url(../images/slide/clothes-short-02.png);}
+.wrapper.h-teg .unit-content--clothes .item-bundle--two .item-03 {background-image: url(../images/slide/clothes-short-03.png);}
+.wrapper.h-teg .unit-content--clothes .item-bundle--two .item-04 {background-image: url(../images/slide/clothes-short-04.png);}
 
-.wrapper.h-teg .unit-content--shoes {display: none;}
-.wrapper.h-teg .unit-content--shoes .item-bundle .item {}
-.wrapper.h-teg .unit-content--shoes .item-bundle--two .item {}
+.wrapper.h-teg .unit-content--shoes {}
+.wrapper.h-teg .unit-content--shoes .item-bundle .item-01 {background-image: url(../images/slide/shoes-long-01.png);}
+.wrapper.h-teg .unit-content--shoes .item-bundle .item-02 {background-image: url(../images/slide/shoes-long-02.png);}
+.wrapper.h-teg .unit-content--shoes .item-bundle .item-03 {background-image: url(../images/slide/shoes-long-03.png);}
+.wrapper.h-teg .unit-content--shoes .item-bundle .item-04 {background-image: url(../images/slide/shoes-long-04.png);}
+.wrapper.h-teg .unit-content--shoes .item-bundle--two .item-01 {background-image: url(../images/slide/shoes-short-01.png);}
+.wrapper.h-teg .unit-content--shoes .item-bundle--two .item-02 {background-image: url(../images/slide/shoes-short-02.png);}
+.wrapper.h-teg .unit-content--shoes .item-bundle--two .item-03 {background-image: url(../images/slide/shoes-short-03.png);}
+.wrapper.h-teg .unit-content--shoes .item-bundle--two .item-04 {background-image: url(../images/slide/shoes-short-04.png);}
+/* //슬라이드아이템 */
+
+/* 슬라이드 버튼 */
+.wrapper.h-teg [class^="unit-content--"] .content-item {position: relative;}
+.wrapper.h-teg [class^="unit-content--"] .content-item [class^="button-slide--"] {width: 99px;padding-top: 88px; position: absolute;bottom: 6px;}
+.wrapper.h-teg [class^="unit-content--"] .content-item .button-slide--prev {left: 17px;background-image: url(../default/arr-left.png);}
+.wrapper.h-teg [class^="unit-content--"] .content-item .button-slide--next {right: 0;background-image: url(../default/arr-right.png);}
+/* // 슬라이드 버튼 */
