@@ -2,12 +2,10 @@
 html, body, h1, h2, h3, h4, p, ul, ol, li, dl, dd {margin: 0;padding:0;}
 ul, ol {list-style: none;}
 img {border:0;vertical-align: top;}
-button {border:0;-webkit-border-radius:0;border-radius:0;margin:0;padding:0;background-color:transparent;vertical-align: top;cursor: pointer;}
+button {border:0;-webkit-border-radius:0;border-radius:0;margin:0;padding:0;background-color:transparent;vertical-align: top;cursor: pointer;box-sizing: border-box;}
 a {text-decoration: none;}
 div {box-sizing: border-box;}
 /* //reset */
-
-/* body {background-color: #222;} */
 
 .wrapper.h-teg {max-width: 1600px;min-width: 1000px;margin: 0 auto;line-height: 1;height: 100vh;display: flex;justify-content: center;align-items: center;}
 .wrapper.h-teg .blind {position: absolute;width: 1px;height: 1px;margin: -1px;padding: 0;border: 0;clip: rect(0 0 0 0);overflow: hidden;text-indent: -5000em;}
@@ -29,7 +27,7 @@ div {box-sizing: border-box;}
 
 /* 탭버튼 */
 .wrapper.h-teg .slot-buttons {width: 25.48076923077%;position: absolute;right: -21.47435897436%;margin-top: 8.97435897436%;}
-.wrapper.h-teg .slot-buttons [class^="button-tab--"] {width: 100%;padding-top: 64.77987421384%;display: block;clip-path: polygon(20% 0, 100% 0, 100% 100%, 20% 100%);}
+.wrapper.h-teg .slot-buttons [class^="button-tab--"] {position: relative;width: 100%;padding-top: 64.77987421384%;display: block;clip-path: polygon(20% 0, 100% 0, 100% 100%, 20% 100%);}
 .wrapper.h-teg .slot-buttons [class^="button-tab--"]:hover {transform: translateY(-10px);}
 .wrapper.h-teg .slot-buttons [class^="button-tab--"] + [class^="button-tab--"] {margin-top: 15.72327044025%;}
 .wrapper.h-teg .slot-buttons [class^="button-tab--"].is-active {clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);}
@@ -43,7 +41,7 @@ div {box-sizing: border-box;}
 .wrapper.h-teg [class^="unit-content--"].is-active {display: block;}
 .wrapper.h-teg [class^="unit-content--"] .item-bundle [class^="item-"] {padding-top: 126.44230769231%;}
 .wrapper.h-teg [class^="unit-content--"] .item-bundle--two [class^="item-"] {padding-top: 63.30128205128%;}
-.wrapper.h-teg [class^="unit-content--"] [class*="item-bundle"] [class^="item-"] {width: 100%;display: block;cursor: pointer;}
+.wrapper.h-teg [class^="unit-content--"] [class*="item-bundle"] [class^="item-"] {width: 100%;display: block;}
 .wrapper.h-teg [class^="unit-content--"] [class*="item-bundle"] [class^="item-"]:hover {transform: translateY(-10px);}
 
 /* 슬라이드아이템 */
@@ -82,10 +80,3 @@ div {box-sizing: border-box;}
 .wrapper.h-teg [class^="unit-content--"] .content-item .button-slide--prev {left: 2.24358974359%;background-image: url(../default/arr-left.png);}
 .wrapper.h-teg [class^="unit-content--"] .content-item .button-slide--next {right: 0;background-image: url(../default/arr-right.png);}
 /* // 슬라이드 버튼 */
-
-
-/* 1920px 이상일때 고정 */
-@media screen and (min-width: 1920px){}
-
-/* 1000px 이하일때 고정 */
-@media screen and (max-width: 1000px){}
