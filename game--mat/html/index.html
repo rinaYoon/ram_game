@@ -6,7 +6,7 @@
 	<title>🌼 MAT MAT 🌼</title>
 	<link rel="stylesheet" href="../css/game.css">
 </head>
-<body>
+<body oncontextmenu="return false">
 	<div class="wrapper">
 		<div class="wrapper-inner bg-img">
 			<!-- 네임 태그 -->
@@ -15,7 +15,7 @@
 
 			<div class="area-games">
 				<!-- 캐릭터 영역 -->
-				<div class="division-character">
+				<div class="division-character" id="capture">
 					<div class="slot-wear">
 						<span class="wear-hat bg-img"></span>
 						<span class="wear-shoes bg-img"></span>
@@ -93,11 +93,16 @@
 				</div>
 				<!-- //탭영역 -->
 			</div>
+
+
+
+			<button type="button" class="imgbtn">캡쳐하기</button>
 		</div>
 	</div>
 
 	<script src="../js/jquery-3.7.1.min.js"></script>
 	<script src="../js/swiper-bundle.min.js"></script>
+	<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 	<script src="../js/game-content.js"></script>
 </body>
 </html>

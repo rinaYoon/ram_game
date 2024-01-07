@@ -80,3 +80,10 @@ div {box-sizing: border-box;}
 .wrapper.h-teg [class^="unit-content--"] .content-item .button-slide--prev {left: 2.24358974359%;background-image: url(../default/arr-left.png);}
 .wrapper.h-teg [class^="unit-content--"] .content-item .button-slide--next {right: 0;background-image: url(../default/arr-right.png);}
 /* // 슬라이드 버튼 */
+
+
+
+
+
+
+.imgbtn {position: absolute;right: 0;bottom: 0;width: 100px;height: 100px;background-color: blueviolet;}

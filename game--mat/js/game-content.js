@@ -127,10 +127,32 @@ function wearItem() {
 	});
 }
 
+function saveImage() {
+	const saveImg = (uri, filename) => {
+		let link = document.createElement('a');
+
+		document.body.appendChild(link);
+
+		link.href = uri;
+		link.download = filename;
+		link.click();
+
+		document.body.removeChild(link);
+	};
+
+	$(".imgbtn").click(function(){
+		html2canvas(document.querySelector("#capture")).then(canvas => {
+			saveImg(canvas.toDataURL('myLoveCharacter/png'), 'myLoveCharacter.png');
+		});
+	});
+}
+
+
 
 $(document).ready(function(){
 	nameCode();
 	tabMove();
 	itemSlide();
 	wearItem();
+	saveImage();
 });
