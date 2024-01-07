@@ -1,4 +1,4 @@
-// 해야할거 : 클릭, 보안
+// 해야할거 : 보안
 
 function tabMove() {
 	var tabBox = $('.wrapper.h-teg .slot-buttons');
@@ -21,6 +21,8 @@ function tabMove() {
 		thisTabButton.click(function(){
 			var thisIndex = $(this).index();
 			var contentEq = thisTabCont.eq(thisIndex);
+
+			console.log(thisIndex);
 
 			tabRemove();
 			$(this).addClass('is-active');
@@ -81,69 +83,42 @@ function itemSlide() {
 	})
 }
 
-
-
-
-
-/*
-참고 - https://soonmac.github.io/vaccine_campaign/js/sub.js
-
-// 모자
-.unit-content--hat .item-01 (모자 1)을 누르면
-.unit-content--hat .item-02 (모자 2)을 누르면
-.unit-content--hat .item-03 (모자 3)을 누르면
-.unit-content--hat .item-04 (모자 4)을 누르면
-.division-character .slot-wear .wear-hat (캐릭터가 착용한 모자) << 의 css 백그라운드 이미지가 바뀐다.
-
-// 옷
-.unit-content--clothes .item-01 (옷 1)을 누르면
-.unit-content--clothes .item-02 (옷 2)을 누르면
-.unit-content--clothes .item-03 (옷 3)을 누르면
-.division-character .slot-wear .wear-clothes (캐릭터가 착용한 옷) << 의 css 백그라운드 이미지가 바뀐다.
-
-// 모자
-.unit-content--shoes .item-01 (신발 1)을 누르면
-.unit-content--shoes .item-02 (신발 2)을 누르면
-.unit-content--shoes .item-03 (신발 3)을 누르면
-.unit-content--shoes .item-04 (신발 4)을 누르면
-.division-character .slot-wear .wear-shoes (캐릭터가 착용한 신발) << 의 css 백그라운드 이미지가 바뀐다.
-*/
 function wearItem() {
-	var characterHat = $('.wrapper.h-teg .slot-wear .wear-hat');
-	var characterClothes = $('.wrapper.h-teg .slot-wear .wear-clothes');
-	var characterShoes = $('.wrapper.h-teg .slot-wear .wear-shoes');
+	let listHatItem = $('.wrapper.h-teg .unit-content--hat [class^="item-"]');
+	let listClothesItem = $('.wrapper.h-teg .unit-content--clothes [class^="item-"]');
+	let listShoesItem = $('.wrapper.h-teg .unit-content--shoes [class^="item-"]');
+	let characterHat = $('.wrapper.h-teg .slot-wear .wear-hat');
+	let characterClothes = $('.wrapper.h-teg .slot-wear .wear-clothes');
+	let characterShoes = $('.wrapper.h-teg .slot-wear .wear-shoes');
 
-	characterHat.css("background-image", "url(../images/character-hat-01.png)");
-	characterClothes.css("background-image", "url(../images/character-clothes-01.png)");
-	characterShoes.css("background-image", "url(../images/character-shoes-01.png)");
+	listHatItem.each(function(index){
+		let thisButton = $(this);
+		let itemNum = index + 1;
+		thisButton.click(function(){
+			characterHat.css("background-image", "url(../images/character-hat-0" + itemNum + ".png)");
+		});
+	});
+
+	listClothesItem.each(function(index){
+		let thisButton = $(this);
+		let itemNum = index + 1;
+		thisButton.click(function(){
+			characterClothes.css("background-image", "url(../images/character-clothes-0" + itemNum + ".png)");
+		});
+	});
+
+	listShoesItem.each(function(index){
+		let thisButton = $(this);
+		let itemNum = index + 1;
+		thisButton.click(function(){
+			characterShoes.css("background-image", "url(../images/character-shoes-0" + itemNum + ".png)");
+		});
+	});
 }
-wearItem();
-
-console.log($('.unit-content--clothes [class^="item-"]')); //<<버튼은 검색하면 차례대로 잘 나옴(인덱스)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function itemClickEvent() {
-// 	$('.wrapper.h-teg .unit-content--hat .item-01').click(function(){});
-// }
-
-
-
 
 
 $(document).ready(function(){
 	tabMove();
 	itemSlide();
-	itemClickEvent();
+	wearItem();
 });
