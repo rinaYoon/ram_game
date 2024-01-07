@@ -1,4 +1,17 @@
-// 해야할거 : 보안
+
+function nameCode() {
+	const titleBundle = [
+		"\u{1F33C} MAT MAT \u{1F33C}"
+	];
+
+	for (let index = 0; index < titleBundle.length; index++) {
+		let titleText = $('title').text();
+
+		if(titleText == titleBundle[index]){
+			$('.wrapper').addClass('h-teg');
+		}
+	}
+}
 
 function tabMove() {
 	var tabBox = $('.wrapper.h-teg .slot-buttons');
@@ -21,8 +34,6 @@ function tabMove() {
 		thisTabButton.click(function(){
 			var thisIndex = $(this).index();
 			var contentEq = thisTabCont.eq(thisIndex);
-
-			console.log(thisIndex);
 
 			tabRemove();
 			$(this).addClass('is-active');
@@ -118,6 +129,7 @@ function wearItem() {
 
 
 $(document).ready(function(){
+	nameCode();
 	tabMove();
 	itemSlide();
 	wearItem();
