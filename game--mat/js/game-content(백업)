@@ -1,7 +1,18 @@
-// 해야할거 : 탭, 드래그(+클릭), 보안
 
+function nameCode() {
+	const titleBundle = [
+		"\u{1F33C} MAT MAT \u{1F33C}"
+	];
 
-// 탭
+	for (let index = 0; index < titleBundle.length; index++) {
+		let titleText = $('title').text();
+
+		if(titleText == titleBundle[index]){
+			$('.wrapper').addClass('h-teg');
+		}
+	}
+}
+
 function tabMove() {
 	var tabBox = $('.wrapper.h-teg .slot-buttons');
 
@@ -66,7 +77,6 @@ function tabMove() {
 
 }
 
-// 슬라이드
 function itemSlide() {
 	$( '.wrapper.h-teg [class^="unit-content--"] .content-item' ).each( function ( i ) {
 		new Swiper( $( this )[ 0 ] ,{
@@ -84,11 +94,65 @@ function itemSlide() {
 	})
 }
 
-// 클릭이벤(클릭버전 + 이거할때 span태그에 포커스가게 하고 엔터나 스페이스로 옷이 입혀져야함)
+function wearItem() {
+	let listHatItem = $('.wrapper.h-teg .unit-content--hat [class^="item-"]');
+	let listClothesItem = $('.wrapper.h-teg .unit-content--clothes [class^="item-"]');
+	let listShoesItem = $('.wrapper.h-teg .unit-content--shoes [class^="item-"]');
+	let characterHat = $('.wrapper.h-teg .slot-wear .wear-hat');
+	let characterClothes = $('.wrapper.h-teg .slot-wear .wear-clothes');
+	let characterShoes = $('.wrapper.h-teg .slot-wear .wear-shoes');
+
+	listHatItem.each(function(index){
+		let thisButton = $(this);
+		let itemNum = index + 1;
+		thisButton.click(function(){
+			characterHat.css("background-image", "url(../images/character-hat-0" + itemNum + ".png)");
+		});
+	});
+
+	listClothesItem.each(function(index){
+		let thisButton = $(this);
+		let itemNum = index + 1;
+		thisButton.click(function(){
+			characterClothes.css("background-image", "url(../images/character-clothes-0" + itemNum + ".png)");
+		});
+	});
+
+	listShoesItem.each(function(index){
+		let thisButton = $(this);
+		let itemNum = index + 1;
+		thisButton.click(function(){
+			characterShoes.css("background-image", "url(../images/character-shoes-0" + itemNum + ".png)");
+		});
+	});
+}
+
+function saveImage() {
+	const saveImg = (uri, filename) => {
+		let link = document.createElement('a');
+
+		document.body.appendChild(link);
+
+		link.href = uri;
+		link.download = filename;
+		link.click();
+
+		document.body.removeChild(link);
+	};
+
+	$(".imgbtn").click(function(){
+		html2canvas(document.querySelector("#capture")).then(canvas => {
+			saveImg(canvas.toDataURL('myLoveCharacter/png'), 'myLoveCharacter.png');
+		});
+	});
+}
 
 
 
 $(document).ready(function(){
+	nameCode();
 	tabMove();
 	itemSlide();
+	wearItem();
+	saveImage();
 });
