@@ -45,32 +45,32 @@ div {box-sizing: border-box;}
 .wrapper.h-teg [class^="unit-content--"] [class*="item-bundle"] [class^="item-"]:hover {transform: translateY(-10px);}
 
 /* 슬라이드아이템 */
-.wrapper.h-teg .unit-content--hat .item-bundle .item-01 {background-image: url(../images/slide/hat-long-01.png);}
-.wrapper.h-teg .unit-content--hat .item-bundle .item-02 {background-image: url(../images/slide/hat-long-02.png);}
-.wrapper.h-teg .unit-content--hat .item-bundle .item-03 {background-image: url(../images/slide/hat-long-03.png);}
-.wrapper.h-teg .unit-content--hat .item-bundle .item-04 {background-image: url(../images/slide/hat-long-04.png);}
-.wrapper.h-teg .unit-content--hat .item-bundle--two .item-01 {background-image: url(../images/slide/hat-short-01.png);}
-.wrapper.h-teg .unit-content--hat .item-bundle--two .item-02 {background-image: url(../images/slide/hat-short-02.png);}
-.wrapper.h-teg .unit-content--hat .item-bundle--two .item-03 {background-image: url(../images/slide/hat-short-03.png);}
-.wrapper.h-teg .unit-content--hat .item-bundle--two .item-04 {background-image: url(../images/slide/hat-short-04.png);}
+.wrapper.h-teg .unit-content--hat .item-bundle .item-01 {background-image: url(../images/slide/hat-01.png);}
+.wrapper.h-teg .unit-content--hat .item-bundle .item-02 {background-image: url(../images/slide/hat-02.png);}
+.wrapper.h-teg .unit-content--hat .item-bundle .item-03 {background-image: url(../images/slide/hat-03.png);}
+.wrapper.h-teg .unit-content--hat .item-bundle .item-04 {background-image: url(../images/slide/hat-04.png);}
+.wrapper.h-teg .unit-content--hat .item-bundle--two .item-01 {background-image: url(../images/slide/hat-01.png);}
+.wrapper.h-teg .unit-content--hat .item-bundle--two .item-02 {background-image: url(../images/slide/hat-02.png);}
+.wrapper.h-teg .unit-content--hat .item-bundle--two .item-03 {background-image: url(../images/slide/hat-03.png);}
+.wrapper.h-teg .unit-content--hat .item-bundle--two .item-04 {background-image: url(../images/slide/hat-04.png);}
 
-.wrapper.h-teg .unit-content--clothes .item-bundle .item-01 {background-image: url(../images/slide/clothes-long-01.png);}
-.wrapper.h-teg .unit-content--clothes .item-bundle .item-02 {background-image: url(../images/slide/clothes-long-02.png);}
-.wrapper.h-teg .unit-content--clothes .item-bundle .item-03 {background-image: url(../images/slide/clothes-long-03.png);}
-.wrapper.h-teg .unit-content--clothes .item-bundle .item-04 {background-image: url(../images/slide/clothes-long-04.png);}
-.wrapper.h-teg .unit-content--clothes .item-bundle--two .item-01 {background-image: url(../images/slide/clothes-short-01.png);}
-.wrapper.h-teg .unit-content--clothes .item-bundle--two .item-02 {background-image: url(../images/slide/clothes-short-02.png);}
-.wrapper.h-teg .unit-content--clothes .item-bundle--two .item-03 {background-image: url(../images/slide/clothes-short-03.png);}
-.wrapper.h-teg .unit-content--clothes .item-bundle--two .item-04 {background-image: url(../images/slide/clothes-short-04.png);}
+.wrapper.h-teg .unit-content--clothes .item-bundle .item-01 {background-image: url(../images/slide/clothes-01.png);}
+.wrapper.h-teg .unit-content--clothes .item-bundle .item-02 {background-image: url(../images/slide/clothes-02.png);}
+.wrapper.h-teg .unit-content--clothes .item-bundle .item-03 {background-image: url(../images/slide/clothes-03.png);}
+.wrapper.h-teg .unit-content--clothes .item-bundle .item-04 {background-image: url(../images/slide/clothes-04.png);}
+.wrapper.h-teg .unit-content--clothes .item-bundle--two .item-01 {background-image: url(../images/slide/clothes-01.png);}
+.wrapper.h-teg .unit-content--clothes .item-bundle--two .item-02 {background-image: url(../images/slide/clothes-02.png);}
+.wrapper.h-teg .unit-content--clothes .item-bundle--two .item-03 {background-image: url(../images/slide/clothes-03.png);}
+.wrapper.h-teg .unit-content--clothes .item-bundle--two .item-04 {background-image: url(../images/slide/clothes-04.png);}
 
-.wrapper.h-teg .unit-content--shoes .item-bundle .item-01 {background-image: url(../images/slide/shoes-long-01.png);}
-.wrapper.h-teg .unit-content--shoes .item-bundle .item-02 {background-image: url(../images/slide/shoes-long-02.png);}
-.wrapper.h-teg .unit-content--shoes .item-bundle .item-03 {background-image: url(../images/slide/shoes-long-03.png);}
-.wrapper.h-teg .unit-content--shoes .item-bundle .item-04 {background-image: url(../images/slide/shoes-long-04.png);}
-.wrapper.h-teg .unit-content--shoes .item-bundle--two .item-01 {background-image: url(../images/slide/shoes-short-01.png);}
-.wrapper.h-teg .unit-content--shoes .item-bundle--two .item-02 {background-image: url(../images/slide/shoes-short-02.png);}
-.wrapper.h-teg .unit-content--shoes .item-bundle--two .item-03 {background-image: url(../images/slide/shoes-short-03.png);}
-.wrapper.h-teg .unit-content--shoes .item-bundle--two .item-04 {background-image: url(../images/slide/shoes-short-04.png);}
+.wrapper.h-teg .unit-content--shoes .item-bundle .item-01 {background-image: url(../images/slide/shoes-01.png);}
+.wrapper.h-teg .unit-content--shoes .item-bundle .item-02 {background-image: url(../images/slide/shoes-02.png);}
+.wrapper.h-teg .unit-content--shoes .item-bundle .item-03 {background-image: url(../images/slide/shoes-03.png);}
+.wrapper.h-teg .unit-content--shoes .item-bundle .item-04 {background-image: url(../images/slide/shoes-04.png);}
+.wrapper.h-teg .unit-content--shoes .item-bundle--two .item-01 {background-image: url(../images/slide/shoes-01.png);}
+.wrapper.h-teg .unit-content--shoes .item-bundle--two .item-02 {background-image: url(../images/slide/shoes-02.png);}
+.wrapper.h-teg .unit-content--shoes .item-bundle--two .item-03 {background-image: url(../images/slide/shoes-03.png);}
+.wrapper.h-teg .unit-content--shoes .item-bundle--two .item-04 {background-image: url(../images/slide/shoes-04.png);}
 /* //슬라이드아이템 */
 
 /* 슬라이드 버튼 */
