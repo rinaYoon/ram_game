@@ -142,9 +142,17 @@ function saveImage() {
 
 	$(".imgbtn").click(function(){
 		//여기에 워터마크를 클래스하나추가해서 잠깐 보엿다가 없어져야할듯
-		html2canvas(document.querySelector("#capture")).then(canvas => {
-			saveImg(canvas.toDataURL('myLoveCharacter/png'), 'myLoveCharacter.png');
-		});
+
+		$(".wrapper.h-teg .division-character .slot-character").css("background-color", "pink");
+
+		setTimeout(function(){
+
+			html2canvas(document.querySelector("#capture")).then(canvas => {
+				saveImg(canvas.toDataURL('myLoveCharacter/png'), 'myLoveCharacter.png');
+			});
+
+		}, 5000);
+
 	});
 }
 
