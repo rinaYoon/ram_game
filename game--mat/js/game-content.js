@@ -147,7 +147,10 @@ function saveImage() {
 
 		setTimeout(function(){
 
-			html2canvas(document.querySelector("#capture")).then(canvas => {
+			html2canvas(document.querySelector("#capture"), {
+				// allowTaint: true,
+				// foreignObjectRendering: true
+			}).then(canvas => {
 				saveImg(canvas.toDataURL('myLoveCharacter/png'), 'myLoveCharacter.png');
 			});
 
