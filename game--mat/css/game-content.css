@@ -12,6 +12,8 @@ div {box-sizing: border-box;}
 .wrapper.h-teg .bg-img {background-repeat: no-repeat;background-position: center top;background-size: 100%;}
 
 .wrapper.h-teg .wrapper-inner {width: 100%;background-image: url(../default/bg.jpg);position: relative;}
+.wrapper.h-teg .wrapper-inner .button-imgsave {width: 14.4375%;padding-top: 9.5%;background-image: url(../default/button-imgsave.png);/* position: absolute;right: -4.5625%;bottom: 0;margin-bottom: 1.0625%; */position: absolute;right: -4.5625vw;bottom: 1.0625vw;}
+
 .wrapper.h-teg .name-teg {width: 12.9375%;padding-top: 6.0625%;background-image: url(../images/user_tag.png);position: absolute;left: 5.8125%;margin-top: 3.6875%;}
 .wrapper.h-teg .area-games {display: flex;justify-content: space-between;padding: 3.0625% 10.875% 3.9375% 7.4375%;}
 .wrapper.h-teg .area-games [class^="division-"] {width: 47.74322%;position: relative;}
@@ -80,10 +82,3 @@ div {box-sizing: border-box;}
 .wrapper.h-teg [class^="unit-content--"] .content-item .button-slide--prev {left: 2.24358974359%;background-image: url(../default/arr-left.png);}
 .wrapper.h-teg [class^="unit-content--"] .content-item .button-slide--next {right: 0;background-image: url(../default/arr-right.png);}
 /* // 슬라이드 버튼 */
-
-
-
-
-
-
-.imgbtn {position: absolute;right: 0;bottom: 0;width: 100px;height: 100px;background-color: blueviolet;}
