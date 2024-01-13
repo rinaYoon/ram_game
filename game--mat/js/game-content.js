@@ -140,13 +140,10 @@ function saveImage() {
 		document.body.removeChild(link);
 	};
 
-	$(".imgbtn").click(function(){
-		//여기에 워터마크를 클래스하나추가해서 잠깐 보엿다가 없어져야할듯
+	$(".wrapper.h-teg .wrapper-inner .button-imgsave").click(function(){
+		$(".wrapper.h-teg .division-character .slot-character").addClass('mark');
 
-		$(".wrapper.h-teg .division-character .slot-character").css("background-color", "pink");
-
-		setTimeout(function(){
-
+		let saveTimer = setTimeout(function(){
 			html2canvas(document.querySelector("#capture"), {
 				// allowTaint: true,
 				// foreignObjectRendering: true
@@ -154,8 +151,10 @@ function saveImage() {
 				saveImg(canvas.toDataURL('myLoveCharacter/png'), 'myLoveCharacter.png');
 			});
 
-		}, 5000);
+			$(".wrapper.h-teg .division-character .slot-character").removeClass('mark');
 
+			clearTimeout(saveTimer);
+		}, 1);
 	});
 }
 
