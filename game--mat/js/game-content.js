@@ -1,7 +1,7 @@
 
 function nameCode() {
 	const titleBundle = [
-		"\u{1F33C} MAT MAT \u{1F33C}"
+		"\u{1F33C} 맛냐의 옷입히기 게임 \u{1F33C}"
 	];
 
 	for (let index = 0; index < titleBundle.length; index++) {
