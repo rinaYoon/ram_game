@@ -26,7 +26,7 @@ div {box-sizing: border-box;}
 .wrapper.h-teg .division-character .slot-wear .wear-clothes {background-image: url(../images/character-select-item.png);}
 .wrapper.h-teg .division-character .slot-wear .wear-shoes {background-image: url(../images/character-select-item.png);}
 .wrapper.h-teg .division-character .slot-character {position: relative;width: 100%;padding-top: 126.44230769231%;background-image: url(../images/character.png);}
-.wrapper.h-teg .division-character .slot-character.mark::after {content: ''; width: 17.30769230769%;padding-top: 16.02564102564%;background-image: url(../default/watermark.png);background-size: cover;background-repeat: no-repeat;background-position: center top; position: absolute;right: 6.73076923077%;bottom: 0;margin-bottom: 3.04487179487%;}
+.wrapper.h-teg .division-character .slot-character.mark::after {content: ''; width: 17.30769230769%;padding-top: 16.02564102564%;background-image: url(//inic-comm.github.io/default-code/default-git/images/watermark.png);background-size: cover;background-repeat: no-repeat;background-position: center top; position: absolute;right: 6.73076923077%;bottom: 0;margin-bottom: 3.04487179487%;}
 /* //캐릭터 */
 
 /* 탭버튼 */

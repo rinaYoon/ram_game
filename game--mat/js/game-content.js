@@ -106,7 +106,7 @@ function wearItem() {
 		let thisButton = $(this);
 		let itemNum = index + 1;
 		thisButton.click(function(){
-			characterHat.css("background-image", "url(../images/character-hat-0" + itemNum + ".png)");
+			characterHat.css("background-image", "url(../images/user/character-hat-0" + itemNum + ".png)");
 		});
 	});
 
@@ -114,7 +114,7 @@ function wearItem() {
 		let thisButton = $(this);
 		let itemNum = index + 1;
 		thisButton.click(function(){
-			characterClothes.css("background-image", "url(../images/character-clothes-0" + itemNum + ".png)");
+			characterClothes.css("background-image", "url(../images/user/character-clothes-0" + itemNum + ".png)");
 		});
 	});
 
@@ -122,7 +122,7 @@ function wearItem() {
 		let thisButton = $(this);
 		let itemNum = index + 1;
 		thisButton.click(function(){
-			characterShoes.css("background-image", "url(../images/character-shoes-0" + itemNum + ".png)");
+			characterShoes.css("background-image", "url(../images/user/character-shoes-0" + itemNum + ".png)");
 		});
 	});
 }
