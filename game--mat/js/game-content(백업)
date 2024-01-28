@@ -1,7 +1,7 @@
 
 function nameCode() {
 	const titleBundle = [
-		"\u{1F33C} MAT MAT \u{1F33C}"
+		"\u{1F33C} 맛냐의 옷입히기 게임 \u{1F33C}"
 	];
 
 	for (let index = 0; index < titleBundle.length; index++) {
@@ -140,10 +140,21 @@ function saveImage() {
 		document.body.removeChild(link);
 	};
 
-	$(".imgbtn").click(function(){
-		html2canvas(document.querySelector("#capture")).then(canvas => {
-			saveImg(canvas.toDataURL('myLoveCharacter/png'), 'myLoveCharacter.png');
-		});
+	$(".wrapper.h-teg .wrapper-inner .button-imgsave").click(function(){
+		$(".wrapper.h-teg .division-character .slot-character").addClass('mark');
+
+		let saveTimer = setTimeout(function(){
+			html2canvas(document.querySelector("#capture"), {
+				// allowTaint: true,
+				// foreignObjectRendering: true
+			}).then(canvas => {
+				saveImg(canvas.toDataURL('myLoveCharacter/png'), 'myLoveCharacter.png');
+			});
+
+			$(".wrapper.h-teg .division-character .slot-character").removeClass('mark');
+
+			clearTimeout(saveTimer);
+		}, 1);
 	});
 }
 
