@@ -105,30 +105,34 @@ function wearItem() {
 	listHatItem.each(function(index){
 		let thisButton = $(this);
 		let itemNum = index + 1;
-		let test = false;
 
 		thisButton.click(function(){
-			// 클릭해서 입혀졌던 아이템을 다시 클릭하면 착용한 아이템 없어지기
-			if(test === false){
-				test = true;
-				console.log(test);
+			if(!thisButton.hasClass('is-active')){
+				listHatItem.removeClass('is-active');
 				characterHat.css("background-image", "url(../images/user/character-hat-0" + itemNum + ".png)");
+				thisButton.addClass('is-active');
 
-			}else if(test === true) {
-				test = false;
-				console.log(test);
+			} else if(thisButton.hasClass('is-active')){
+				thisButton.removeClass('is-active');
 				characterHat.css("background-image", "url(../images/user/character-select-item.png)");
 			}
-			// 문제점 : 각각 버튼들 한번씩 클릭하면 각 버튼들은 true로 적용된다. 그러나 똑같은 버튼이 아니더라도 다른 버튼을 누르면 (이미 true 상태이기 때문에)false가 된다.
-			// 그래서 한개의 버튼이 true 상태가 된채로 다른 버튼을 클릭하면 => true상태였던 모든 버튼들을 false로 바꿔야함.
 		});
 	});
 
 	listClothesItem.each(function(index){
 		let thisButton = $(this);
 		let itemNum = index + 1;
+
 		thisButton.click(function(){
-			characterClothes.css("background-image", "url(../images/user/character-clothes-0" + itemNum + ".png)");
+			if(!thisButton.hasClass('is-active')){
+				listClothesItem.removeClass('is-active');
+				characterClothes.css("background-image", "url(../images/user/character-clothes-0" + itemNum + ".png)");
+				thisButton.addClass('is-active');
+
+			} else if(thisButton.hasClass('is-active')){
+				thisButton.removeClass('is-active');
+				characterClothes.css("background-image", "url(../images/user/character-select-item.png)");
+			}
 		});
 	});
 
@@ -136,7 +140,15 @@ function wearItem() {
 		let thisButton = $(this);
 		let itemNum = index + 1;
 		thisButton.click(function(){
-			characterShoes.css("background-image", "url(../images/user/character-shoes-0" + itemNum + ".png)");
+			if(!thisButton.hasClass('is-active')){
+				listShoesItem.removeClass('is-active');
+				characterShoes.css("background-image", "url(../images/user/character-shoes-0" + itemNum + ".png)");
+				thisButton.addClass('is-active');
+
+			} else if(thisButton.hasClass('is-active')){
+				thisButton.removeClass('is-active');
+				characterShoes.css("background-image", "url(../images/user/character-select-item.png)");
+			}
 		});
 	});
 }
