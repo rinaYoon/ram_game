@@ -3,21 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>🌼 맛냐의 옷입히기 게임 🌼</title>
+	<title>💧 물꼬의 옷입히기 게임 💧</title>
 	<link rel="stylesheet" href="../css/game.css">
 </head>
 <body oncontextmenu="return false">
 	<div class="wrapper">
 		<div class="wrapper-inner bg-img">
 			<!-- 네임 태그 -->
-			<h1 class="name-teg bg-img"><span class="blind">맛냐의 옷입히기 게임</span></h1>
+			<h1 class="name-teg bg-img"><span class="blind">물꼬의 옷입히기 게임</span></h1>
 			<!-- //네임 태그 -->
 
 			<div class="area-games">
 				<!-- 캐릭터 영역 -->
 				<div class="division-character" id="capture">
 					<div class="slot-wear">
-						<span class="wear-hat bg-img"></span>
+						<span class="wear-acc bg-img"></span>
 						<span class="wear-shoes bg-img"></span>
 						<span class="wear-clothes bg-img"></span>
 					</div>
@@ -28,7 +28,7 @@
 				<!-- 탭영역 -->
 				<div class="division-tab">
 					<div class="slot-buttons" role="tablist">
-						<button type="button" class="button-tab--hat bg-img is-active" id="tab-button01" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-content01">
+						<button type="button" class="button-tab--acc bg-img is-active" id="tab-button01" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-content01">
 							<span class="blind">모자 메뉴 버튼</span>
 						</button>
 						<button type="button" class="button-tab--clothes bg-img" id="tab-button02" role="tab" tabindex="-1" aria-selected="true" aria-controls="tab-content02">
@@ -40,7 +40,7 @@
 					</div>
 
 					<div class="slot-contents">
-						<div class="unit-content--hat is-active" id="tab-content01" role="tabpanel" tabindex="0" aria-labelledby="tab-button01">
+						<div class="unit-content--acc is-active" id="tab-content01" role="tabpanel" tabindex="0" aria-labelledby="tab-button01">
 							<div class="swiper content-item">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide item-bundle--two">
@@ -60,12 +60,16 @@
 						<div class="unit-content--clothes" id="tab-content02" role="tabpanel" tabindex="0" aria-labelledby="tab-button02">
 							<div class="swiper content-item">
 								<div class="swiper-wrapper">
-									<div class="swiper-slide item-bundle--two">
-										<button type="button" class="item-01 bg-img"><span class="blind">옷1</span></button>
-										<button type="button" class="item-02 bg-img"><span class="blind">옷2</span></button>
-									</div>
 									<div class="swiper-slide item-bundle">
+										<button type="button" class="item-01 bg-img"><span class="blind">옷1</span></button>
+									</div>
+									<div class="swiper-slide item-bundle--two">
+										<button type="button" class="item-02 bg-img"><span class="blind">옷2</span></button>
 										<button type="button" class="item-03 bg-img"><span class="blind">옷3</span></button>
+									</div>
+									<div class="swiper-slide item-bundle--two">
+										<button type="button" class="item-04 bg-img"><span class="blind">옷2</span></button>
+										<button type="button" class="item-05 bg-img"><span class="blind">옷3</span></button>
 									</div>
 								</div>
 								<button class="button-slide--prev bg-img" type="button"><span class="blind">이전</span></button>
@@ -101,6 +105,6 @@
 	<script src="//inic-comm.github.io/default-code/default-git/js/jquery-3.7.1.min.js"></script>
 	<script src="//inic-comm.github.io/default-code/default-git/js/swiper-bundle.min.js"></script>
 	<script src="//inic-comm.github.io/default-code/default-git/js/html2canvas.min.js"></script>
-	<script src="../js/game-content.js"></script>
+	<script src="//inic-comm.github.io/default-code/default-git/js/game-content.js"></script>
 </body>
 </html>

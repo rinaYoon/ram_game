@@ -22,11 +22,11 @@ div {box-sizing: border-box;}
 /* 캐릭터 */
 .h-teg .division-character .slot-wear {width: 100%;position: absolute;top: 0;left: 0;z-index: 10;}
 .h-teg .division-character .slot-wear [class^="wear-"] {width: 100%;padding-top: 126.44230769231%;position: absolute;top: 0;left: 0;}
-.h-teg .division-character .slot-wear .wear-hat {background-image: url(../images/user/character-select-item.png);}
+.h-teg .division-character .slot-wear .wear-acc {background-image: url(../images/user/character-select-item.png);}
 .h-teg .division-character .slot-wear .wear-clothes {background-image: url(../images/user/character-select-item.png);}
 .h-teg .division-character .slot-wear .wear-shoes {background-image: url(../images/user/character-select-item.png);}
 .h-teg .division-character .slot-character {position: relative;width: 100%;padding-top: 126.44230769231%;background-image: url(../images/user/character.png);}
-.h-teg .division-character .slot-character.mark::after {content: ''; width: 17.30769230769%;padding-top: 16.02564102564%;background-image: url(../images/background/watermark.png);background-size: cover;background-repeat: no-repeat;background-position: center top; position: absolute;right: 6.73076923077%;bottom: 0;margin-bottom: 3.04487179487%;}
+.h-teg .division-character .slot-character.mark::after {content: ''; width: 17.30769230769%;padding-top: 16.02564102564%;background-image: url(../images/background/watermark.png);background-size: cover;background-repeat: no-repeat;background-position: center top; position: absolute;right: 6.73076923077%;bottom: 0;margin-bottom: 3.04487179487%;z-index: 10;}
 /* //캐릭터 */
 
 /* 탭버튼 */
@@ -36,7 +36,7 @@ div {box-sizing: border-box;}
 .h-teg .slot-buttons [class^="button-tab--"] + [class^="button-tab--"] {margin-top: 15.72327044025%;}
 .h-teg .slot-buttons [class^="button-tab--"].is-active {clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);}
 .h-teg .slot-buttons [class^="button-tab--"].is-active:hover {transform: translateY(0);}
-.h-teg .slot-buttons .button-tab--hat {background-image: url(../images/background/tag-hat.png);}
+.h-teg .slot-buttons .button-tab--acc {background-image: url(../images/background/tag-acc.png);}
 .h-teg .slot-buttons .button-tab--clothes {background-image: url(../images/background/tag-clothes.png);}
 .h-teg .slot-buttons .button-tab--shoes {background-image: url(../images/background/tag-shoes.png);}
 /* //탭버튼 */
@@ -49,14 +49,14 @@ div {box-sizing: border-box;}
 .h-teg [class^="unit-content--"] [class*="item-bundle"] [class^="item-"]:hover {transform: translateY(-10px);}
 
 /* 슬라이드아이템 */
-.h-teg .unit-content--hat .item-bundle .item-01 {background-image: url(../images/slide/hat-01.png);}
-.h-teg .unit-content--hat .item-bundle .item-02 {background-image: url(../images/slide/hat-02.png);}
-.h-teg .unit-content--hat .item-bundle .item-03 {background-image: url(../images/slide/hat-03.png);}
-.h-teg .unit-content--hat .item-bundle .item-04 {background-image: url(../images/slide/hat-04.png);}
-.h-teg .unit-content--hat .item-bundle--two .item-01 {background-image: url(../images/slide/hat-01.png);}
-.h-teg .unit-content--hat .item-bundle--two .item-02 {background-image: url(../images/slide/hat-02.png);}
-.h-teg .unit-content--hat .item-bundle--two .item-03 {background-image: url(../images/slide/hat-03.png);}
-.h-teg .unit-content--hat .item-bundle--two .item-04 {background-image: url(../images/slide/hat-04.png);}
+.h-teg .unit-content--acc .item-bundle .item-01 {background-image: url(../images/slide/acc-01.png);}
+.h-teg .unit-content--acc .item-bundle .item-02 {background-image: url(../images/slide/acc-02.png);}
+.h-teg .unit-content--acc .item-bundle .item-03 {background-image: url(../images/slide/acc-03.png);}
+.h-teg .unit-content--acc .item-bundle .item-04 {background-image: url(../images/slide/acc-04.png);}
+.h-teg .unit-content--acc .item-bundle--two .item-01 {background-image: url(../images/slide/acc-01.png);}
+.h-teg .unit-content--acc .item-bundle--two .item-02 {background-image: url(../images/slide/acc-02.png);}
+.h-teg .unit-content--acc .item-bundle--two .item-03 {background-image: url(../images/slide/acc-03.png);}
+.h-teg .unit-content--acc .item-bundle--two .item-04 {background-image: url(../images/slide/acc-04.png);}
 
 .h-teg .unit-content--clothes .item-bundle .item-01 {background-image: url(../images/slide/clothes-01.png);}
 .h-teg .unit-content--clothes .item-bundle .item-02 {background-image: url(../images/slide/clothes-02.png);}

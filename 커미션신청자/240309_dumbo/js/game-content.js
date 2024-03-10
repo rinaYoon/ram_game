@@ -1,7 +1,8 @@
 
 function nameCode() {
 	const titleBundle = [
-		"\u{1F33C} 맛냐의 옷입히기 게임 \u{1F33C}"
+		"\u{1F33C} 맛냐의 옷입히기 게임 \u{1F33C}",
+		"\u{1F4A7} 물꼬의 옷입히기 게임 \u{1F4A7}",
 	];
 
 	for (let index = 0; index < titleBundle.length; index++) {
@@ -95,26 +96,26 @@ function itemSlide() {
 }
 
 function wearItem() {
-	let listHatItem = $('.wrapper.h-teg .unit-content--hat [class^="item-"]');
+	let listaccItem = $('.wrapper.h-teg .unit-content--acc [class^="item-"]');
 	let listClothesItem = $('.wrapper.h-teg .unit-content--clothes [class^="item-"]');
 	let listShoesItem = $('.wrapper.h-teg .unit-content--shoes [class^="item-"]');
-	let characterHat = $('.wrapper.h-teg .slot-wear .wear-hat');
+	let characteracc = $('.wrapper.h-teg .slot-wear .wear-acc');
 	let characterClothes = $('.wrapper.h-teg .slot-wear .wear-clothes');
 	let characterShoes = $('.wrapper.h-teg .slot-wear .wear-shoes');
 
-	listHatItem.each(function(index){
+	listaccItem.each(function(index){
 		let thisButton = $(this);
 		let itemNum = index + 1;
 
 		thisButton.click(function(){
 			if(!thisButton.hasClass('is-active')){
-				listHatItem.removeClass('is-active');
-				characterHat.css("background-image", "url(../images/user/character-hat-0" + itemNum + ".png)");
+				listaccItem.removeClass('is-active');
+				characteracc.css("background-image", "url(../images/user/character-acc-0" + itemNum + ".png)");
 				thisButton.addClass('is-active');
 
 			} else if(thisButton.hasClass('is-active')){
 				thisButton.removeClass('is-active');
-				characterHat.css("background-image", "url(../images/user/character-select-item.png)");
+				characteracc.css("background-image", "url(../images/user/character-select-item.png)");
 			}
 		});
 	});
