@@ -171,10 +171,7 @@ function saveImage() {
 		$(".wrapper.h-teg .division-character .slot-character").addClass('mark');
 
 		let saveTimer = setTimeout(function(){
-			html2canvas(document.querySelector("#capture"), {
-				// allowTaint: true,
-				// foreignObjectRendering: true
-			}).then(canvas => {
+			html2canvas(document.querySelector("#capture"), {scale:1, dpi: 300,}).then(canvas => {
 				saveImg(canvas.toDataURL('myLoveCharacter/png'), 'myLoveCharacter.png');
 			});
 
