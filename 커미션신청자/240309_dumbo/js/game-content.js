@@ -172,12 +172,14 @@ function saveImage() {
 		let characterHeight = document.querySelector(".wrapper.h-teg .slot-character").offsetHeight;
 
 		$(".wrapper.h-teg .division-character .slot-character").addClass('mark');
+		$(".wrapper.h-teg").css("width","1920px");
 
 		let saveTimer = setTimeout(function(){
-			html2canvas(document.querySelector("#capture"), {scale:1, dpi: 300, width: characterWidth, height: characterHeight}).then(canvas => {
+			html2canvas(document.querySelector("#capture"), {scale:1, dpi: 300, width: 624, height: 789}).then(canvas => {
 				saveImg(canvas.toDataURL('myLoveCharacter/png'), 'myLoveCharacter.png');
 			});
 
+			$(".wrapper.h-teg").css("width","100%");
 			$(".wrapper.h-teg .division-character .slot-character").removeClass('mark');
 
 			clearTimeout(saveTimer);
