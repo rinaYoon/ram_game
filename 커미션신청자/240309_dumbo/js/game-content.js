@@ -168,9 +168,6 @@ function saveImage() {
 	};
 
 	$(".wrapper.h-teg .wrapper-inner .button-imgsave").click(function(){
-		let characterWidth = document.querySelector(".wrapper.h-teg .slot-character").offsetWidth;
-		let characterHeight = document.querySelector(".wrapper.h-teg .slot-character").offsetHeight;
-
 		$(".wrapper.h-teg .division-character .slot-character").addClass('mark');
 		$(".wrapper.h-teg").css("width","1920px");
 
